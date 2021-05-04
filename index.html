@@ -1,4 +1,9 @@
 <script type="text/javascript">
-window.location.href = window.location.search.substr(1)
-window.close()
+let destination = window.location.search.substr(1)
+
+if (destination) window.location.href = destination
+
+setTimeout(() => {
+   window.close()
+}, 2000)
 </script>
